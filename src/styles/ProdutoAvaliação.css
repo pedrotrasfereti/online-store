@@ -1,0 +1,45 @@
+.avaliação-container {
+  padding: 15px 25px;
+}
+
+.avaliação-titulo {
+  color: #222;
+  font-family: Poppins , sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px 0 15px;
+}
+
+.avaliação {
+  align-items: center;
+  color: #222;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: Roboto , sans-serif;
+  height: 30px;
+  justify-content: space-between;
+  margin: 15px 0;
+  width: 250px;
+}
+
+.avaliação-input {
+  margin-right: 2.5px;
+}
+
+.avaliação > label {
+  font-size: 15px;
+}
+
+textarea {
+  margin: 5px 0 0;
+  resize: none;
+}
+
+.avaliação-comentário {
+  height: 100px;
+  width: 545px;
+}
+
+.avaliação-botão-enviar {
+  margin: 15px 0;
+}

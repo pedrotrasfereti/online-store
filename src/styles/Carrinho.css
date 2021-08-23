@@ -1,0 +1,37 @@
+.carrinho {
+  background-color: ghostwhite;
+  min-height: 100vh;
+}
+
+.carrinho-mensagem-vazio {
+  font-family: Roboto , sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+}
+
+.carrinho-lista-produtos {
+  box-shadow: 0 0 5px 1px whitesmoke;
+  list-style: none;
+  padding: 0;
+  transform: rotate(180deg);
+}
+
+.carrinho-lista-produtos li {
+  background-color: #00000020;
+  transform: rotate(-180deg);
+}
+
+.carrinho-lista-produtos li:nth-child( odd ) {
+  background-color: #00000010;
+}
+
+.carrinho-botão-checkout {
+  display: block;
+  margin: 30px auto 50px;
+}
+
+.carrinho-botão-checkout a {
+  color: white;
+  text-decoration: none;
+}

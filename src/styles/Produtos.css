@@ -1,0 +1,106 @@
+.produto-lista {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.produto-lista > li {
+  display: inline-block;
+}
+
+.produto-container {
+  align-items: center;
+  background-color: #ebebf4;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 10px gainsboro;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 275px;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 0;
+  width: 200px;
+}
+
+.produto-container > * {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.produto-titulo {
+  color: #222;
+  font-family: Roboto , sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  height: 80px;
+  overflow: hidden;
+  padding: 15px 15px 0;
+}
+
+.produto-thumb-container {
+  background-color: white;
+  width: 100%;
+}
+
+.produto-thumb {
+  height: 120px;
+  object-fit: contain;
+  width: 120px;
+}
+
+.produto-preço {
+  color: #222;
+  display: block;
+  font-family: Poppins , sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.produto-container a {
+  font-size: 0;
+  height: 125px;
+  margin: 80px 0 0;
+  position: absolute;
+  width: 200px;
+}
+
+.produto-botão-add {
+  background-color: #22bb53;
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  cursor: pointer;
+  font-family: Open Sans , sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  height: 32.5px;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.produto-botão-add:disabled {
+  cursor: default;
+  opacity: 75%;
+}
+
+.produto-botão-add:not( :disabled ):hover {
+  background-color: #1eab4b;
+}
+
+/* font-size: 1.3em; */
+.produto-frete-gratis-container {
+  bottom: 42%;
+  left: 33%;
+  position: relative;
+}
+
+.produto-frete-gratis {
+  font-size: 1.3em;
+  position: absolute;
+}

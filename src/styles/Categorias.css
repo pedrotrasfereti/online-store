@@ -1,0 +1,38 @@
+.categorias {
+  background-color: #ececf5;
+  box-shadow: inset 1px 1px 10px gainsboro;
+  min-width: 260px;
+}
+
+.titulo-categorias {
+  color: #444;
+  font-family: Poppins , sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 25px 0 15px;
+  text-align: center;
+}
+
+.lista-categorias {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.categoria {
+  background: none;
+  border: 0;
+  color: #464648;
+  cursor: pointer;
+  font-family: Open Sans , sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.categoria:hover {
+  background-color: #e5e5ec;
+  color: #404040;
+}
