@@ -1,2 +1,2 @@
-# trybe-online-store
-Loja virtual completa utilizando o API do Mercado Livre.
+# Front-End Online Store
+Projeto em ReactJS para fixação dos conhecimentos adquiridos no bloco de Front-End, em especial a construção de rotas com o BrowserRouter, manipulação de APIs, e trabalho em equipe com metodologias ágeis. :)
