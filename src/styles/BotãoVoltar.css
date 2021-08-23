@@ -1,0 +1,16 @@
+.botão-voltar {
+  background: url('../images/icone-voltar.svg') no-repeat center;
+  background-size: 30px;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.link-voltar {
+  background: transparent;
+  cursor: pointer;
+  font-size: 0;
+  height: 30px;
+  margin: 10px 0 0 10px;
+  position: absolute;
+  width: 30px;
+}

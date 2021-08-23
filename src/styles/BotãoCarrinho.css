@@ -1,0 +1,33 @@
+.botão-carrinho {
+  background: url('../images/icone-produtos.svg') no-repeat center;
+  background-size: 42.5px;
+  height: 50px;
+  width: 50px;
+}
+
+.link-carrinho {
+  background: transparent;
+  cursor: pointer;
+  font-size: 0;
+  height: 50px;
+  margin: 7px 0 0;
+  position: absolute;
+  width: 50px;
+}
+
+.quantidade-total {
+  align-items: center;
+  background-color: lightcoral;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  font-family: Roboto , sans-serif;
+  font-size: 13px;
+  height: 17px;
+  justify-content: center;
+  left: 30px;
+  position: relative;
+  top: 23px;
+  user-select: none;
+  width: 18px;
+}

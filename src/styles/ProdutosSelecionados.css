@@ -1,0 +1,42 @@
+.produtos-selecionados {
+  align-items: center;
+  background-color: gainsboro;
+  border: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 150px;
+  justify-content: space-around;
+  margin: 0 0 25px;
+}
+
+.produtos-selecionados li {
+  align-items: center;
+  counter-increment: contador-produtos-selecionados;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.produtos-selecionados li:before {
+  background: slateblue;
+  border-radius: 50%;
+  color: white;
+  content: counter(contador-produtos-selecionados);
+  display: inline-block;
+  font-family: Poppins , sans-serif;
+  font-size: 18px;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 2.7rem;
+}
+
+.produtos-selecionados-thumb {
+  border: 0;
+  border-radius: 3px;
+  height: 120px;
+  width: 120px;
+}

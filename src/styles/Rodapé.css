@@ -1,0 +1,27 @@
+footer {
+  align-items: center;
+  background-color: #48484c;
+  box-shadow: inset 1px 1px 10px #626267;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 135px;
+  justify-content: center;
+}
+
+footer > a {
+  background-color: #525258;
+  border: 0;
+  border-radius: 3px;
+  color: ghostwhite;
+  font-family: Roboto , sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+footer > a:hover {
+  background-color: #59595f;
+  color: ghostwhite;
+}
