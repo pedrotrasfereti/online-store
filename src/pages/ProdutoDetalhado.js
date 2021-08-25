@@ -24,13 +24,19 @@ class ProdutoDetalhado extends Component {
     });
   }
 
-  adicionaAvaliacao = () => {
+  adicionaAvaliacao = (event) => {
+    event.preventDefault();
     const { avaliacaoProduto, avaliacaoComentario } = this.state;
     const novaAvalicao = {
       avaliacaoProduto,
       avaliacaoComentario,
     };
-    this.setState(({ lista }) => ({ lista: [...lista, novaAvalicao] }));
+    this.setState(({ lista }) => (
+      {
+        lista: [...lista, novaAvalicao],
+        avaliacaoComentario: '',
+      }
+    ));
   }
 
   renderAvaliacao = (item) => {
@@ -63,7 +69,7 @@ class ProdutoDetalhado extends Component {
     } = this.props;
 
     const { price, thumbnail, title } = produto;
-    const { lista } = this.state;
+    const { avaliacaoProduto, avaliacaoComentario, lista } = this.state;
 
     return (
       <section className="produto-detalhado">
@@ -95,6 +101,7 @@ class ProdutoDetalhado extends Component {
             <ProdutoAvaliação
               adicionaAvaliacao={ this.adicionaAvaliacao }
               atualizarEstado={ this.atualizarEstado }
+              avaliacaoComentario={ avaliacaoComentario }
             />
             <div className="avaliações-container">
               {lista.length === 0 ? (

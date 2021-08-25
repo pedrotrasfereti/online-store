@@ -5,7 +5,12 @@ import '../styles/ProdutoAvaliação.css';
 
 class ProdutoAvaliação extends Component {
   render() {
-    const { adicionaAvaliacao, atualizarEstado } = this.props;
+    const {
+      avaliacaoComentario,
+      adicionaAvaliacao,
+      atualizarEstado
+    } = this.props;
+
     return (
       <form className="avaliação-container">
         <h1 className="avaliação-titulo">
@@ -73,15 +78,17 @@ class ProdutoAvaliação extends Component {
           <label htmlFor="avaliação-comentario" className="avaliação-comentario-label">
             Deixe seu comentário:
             <textarea
+              id="avaliação-comentario"
               className="avaliação-comentário form-control"
               name="avaliacaoComentario"
               onChange={ atualizarEstado }
+              value={ avaliacaoComentario }
               data-testid="product-detail-evaluation"
             />
           </label>
         </div>
         <button
-          type="button"
+          type="submit"
           className="avaliação-botão-enviar btn btn-primary"
           onClick={ adicionaAvaliacao }
         >

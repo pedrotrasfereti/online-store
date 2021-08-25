@@ -20,7 +20,7 @@ class App extends React.Component {
     }
     this.state = {
       carrinho: JSON.parse(localStorage.getItem('carrinho')),
-      produtoClicado: '',
+      produtoClicado: {},
       quantidadeTotal: 0,
     };
   }
