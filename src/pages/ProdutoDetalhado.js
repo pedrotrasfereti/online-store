@@ -69,7 +69,7 @@ class ProdutoDetalhado extends Component {
     } = this.props;
 
     const { price, thumbnail, title } = produto;
-    const { avaliacaoProduto, avaliacaoComentario, lista } = this.state;
+    const { avaliacaoComentario, lista } = this.state;
 
     return (
       <section className="produto-detalhado">
