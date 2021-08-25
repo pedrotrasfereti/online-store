@@ -29,12 +29,7 @@ class Home extends Component {
 
   atualizaTermo = ({ target }) => {
     const { value } = target;
-    this.setState({ termoBusca: value }, () => {
-      const tempo = 3000;
-      setTimeout(() => {
-        this.executaBusca();
-      }, tempo);
-    });
+    this.setState({ termoBusca: value });
   }
 
   atualizaCategoriaId = ({ target }) => {
